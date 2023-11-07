@@ -181,9 +181,8 @@ The HTTP Post alert had a significantly higher increase at 8:00 PM on the same d
 
 ### Apache Attack Logs Dashboard
 
-![..](Images/Apache%20Attack%20Dashboard.png)
 
-$~$
+![..](Images/Apache%20Attack%20Dashboard.png)
 
 Based on the dashboard that we created, we can immediately see suspicious activity from two HTTP requests, the cluster map, the URI data, and user agent. 
 + HTTP Requests
