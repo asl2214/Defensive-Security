@@ -124,7 +124,9 @@ Last but not least, this alert did not detect suspicious volume as the attack lo
 
 ### Windows Server Attack Logs Dashboard
 ![..](Images/Windows_Server_Monitoring_Attack_Logs_Dashboard.png)
+
 $~$
+
 Based on the dashboard that we created, we can immediately see suspicious activity from two signatures and two users. 
 + signatures
   1. “user accounts getting locked out” - **896 peak count** at 2:00 AM on Wednesday, March 25th, 2020 (total of 1,811 events from 12:00 AM - 3:00 AM) 
@@ -180,7 +182,9 @@ The HTTP Post alert had a significantly higher increase at 8:00 PM on the same d
 ### Apache Attack Logs Dashboard
 
 ![..](Images/Apache%20Attack%20Dashboard.png)
+
 $~$
+
 Based on the dashboard that we created, we can immediately see suspicious activity from two HTTP requests, the cluster map, the URI data, and user agent. 
 + HTTP Requests
   1. HTTP GET Method - **729 peak count** at 6:00 PM  on Wednesday, March 25th, 2020 (total of 1,811 events from 5:00 PM - 7:00 PM) 
