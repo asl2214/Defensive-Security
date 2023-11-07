@@ -65,7 +65,7 @@ From the normal activity count per hour, the highest number count we found was 1
 Hourly count of the HTTP POST Request Method was created as an alert to notify of any suspicious increase if the amount passed the chosen threshold:
 ![..](Images/HTTP_Post_baseline.png)
 ![..](Images/HTTP-POST-alert.png)
-The highest number of events that we found in our baseline 
+The highest number of events that we found in our baseline was 7 and chose a threshold of 10. In general, our thresholds never strayed too far from the highest count that we found.
 
 ### Dashboard
 
@@ -87,8 +87,8 @@ Severity Levels:
 + baseline
 ![..](Images/severity-levels-table.png)
 + attack
-![..](Images/windows-severity-attack.png)
-The attack log indicates a major difference in statistical numbers compared to normal activity in terms of severity level. There was a jump from 329 events to 1111 events in High severity and a slight decrease in informational severity from 4435 counts to 4283 counts. 
+![..](Images/windows_severity_levels_attack.png)
+The attack log indicates a major difference in statistical numbers compared to normal activity in terms of severity level. There was a jump from 329 events to 1111 events in High severity and a slight decrease in informational severity from 4435 counts to 4383 counts. 
 
 $~$
 
@@ -96,7 +96,7 @@ Success and failure login status:
 + baseline
 ![..](Images/percentage-of-status-success-and-failure.png)
 + attack
-![..](Images/windows-status-attack.png)
+![..](Images/windows_status_attack.png)
 
 ### Alerts
 
