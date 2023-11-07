@@ -45,7 +45,7 @@ Hourly count of failed Windows activity was created as an alert to notify of any
 ![..](Images/failed-windows-activity.png)
 We chose 15 counts as our threshold based on our baseline which we based off of the highest number of events that could possibly happen within the hour. 
 
-$%$
+$~$
 
 Hourly count of the signature "an account was successfully logged on" was created as an alert to notify of any suspicious increase if the amount passed the chosen threshold:
 ![..](Images/successful_login_baseline.png)
@@ -84,7 +84,7 @@ Count of each HTTP Response Codes:
 Hourly count of international activity was created as an alert to notify of any suspicious increase if the amount passed the chosen threshold: 
 ![..](Images/international_activity_baseline.png)
 ![..](Images/IP-activity-outside-the-US.png)
-From the normal activity count per hour, the highest number count we found was 120 events and so we chose 125 counts as our threshold. 
+From the normal activity count per hour, the highest number count we found was 120 events, and so we chose 125 counts as our threshold. 
 
 Hourly count of the HTTP POST Request Method was created as an alert to notify of any suspicious increase if the amount passed the chosen threshold:
 ![..](Images/HTTP_Post_baseline.png)
