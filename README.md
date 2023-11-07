@@ -125,8 +125,6 @@ Last but not least, this alert did not detect suspicious volume as the attack lo
 ### Windows Server Attack Logs Dashboard
 ![..](Images/Windows_Server_Monitoring_Attack_Logs_Dashboard.png)
 
-$~$
-
 Based on the dashboard that we created, we can immediately see suspicious activity from two signatures and two users. 
 + signatures
   1. “user accounts getting locked out” - **896 peak count** at 2:00 AM on Wednesday, March 25th, 2020 (total of 1,811 events from 12:00 AM - 3:00 AM) 
