@@ -1,5 +1,5 @@
 ## Overview
-For this project, we played the role of a SOC analyst at a small company called Virtual Space Industries (VSI). The scenario that was given was that a rival company called JobeCorp was rumored to launch a cyberattack on VSI. Our job was to create a SIEM that would monitor potential attacks on VSI's systems and applications. The team was given **Windows Server Logs** and **Apache Server Logs** that represented normal internet activity. The Windows Server Logs contain intellectual property of VSI's next-generation virtual reality programs while Apache Server Logs are from VSI's main public-facing website. 
+For this project, we played the role of a SOC analyst at a small company called Virtual Space Industries (VSI). The scenario that was given was that a rival company called JobeCorp was rumored to launch a cyberattack on VSI. Our job was to create a SIEM that would monitor potential attacks on VSI's systems and applications. The team was given **Windows Server Logs** and **Apache Server Logs** that represented normal internet activity. The Windows Server Logs contain intellectual property of VSI's next-generation virtual reality programs while Apache Server Logs are from VSI's main public-facing website. Baseline logs were then compared to attack logs to check the efficacy of the thresholds chosen for alerts. 
 
 ## Reviewing Normal Windows Server Logs
 
@@ -19,12 +19,15 @@ Comparison of the success and failure of Windows activity presented if there was
 ### Alerts
 
 Hourly count of failed Windows activity was created as an alert to notify of any suspicious increase if the amount passed the chosen threshold: 
+![..](Images/failed_windows_activity_baseline.png)
 ![..](Images/failed-windows-activity.png)
 
 Hourly count of the signature "an account was successfully logged on" was created as an alert to notify of any suspicious increase if the amount passed the chosen threshold:
+![..](Images/successful_login_baseline.png)
 ![..](Images/successful-login-alert.png)
 
 Hourly count of the signature "a user account was deleted" was created as an alert to notify of any suspicious increase if the amount passed the chosen threshold: 
+![..](Images/users_deleted_baseline.png)
 ![..](Images/users-deleted.png)
 
 ### Dashboard
@@ -58,7 +61,7 @@ Hourly count of the HTTP POST Request Method was created as an alert to notify o
 
 ### Dashboard
 
-After successfully creating the reports and alerts, we created a dashboard to view fields that were significant to know. 
+After successfully creating the reports and alerts, we created a dashboard to view fields that we thought were significant to know. 
 
 ![..](Images/apache_dashboard.png)
 
