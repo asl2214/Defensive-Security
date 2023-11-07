@@ -31,42 +31,39 @@ Hourly count of the signature "a user account was deleted" was created as an ale
 
 Once these reports and alerts were created, a dashboard was created for easier viewing. 
 
-![..](Images/blah)
-
-
+![..](Images/Windows_Server_Monitoring_Logs_Dashboard.png)
 
 ## Reviewing Normal Apache Server Logs
 Next, we analyzed Apache Server Logs of normal activity. The fields we looked at were methods, referer_domain, status, clientip, and useragent. Three reports were also generated according to these fields - a table of different HTTP request methods, top 10 referrer domains to VSI's website, and the count of each HTTP response code. Two alerts were made to follow up after the reports: hourly international activity and hourly count of the HTTP POST request method. All reports and emails were sent to SOC@VSI-company.com. 
 
 ### Reports
 
-Table of signatures and associated signature IDs was created from the the signature_id field for identification: 
-![..](Images/blah)
+Table of HTTP Request Methods activity: 
+![..](Images/HTTP-Methods-logs.png)
 
-Severity levels and the percentages of each level report allowed for quick understanding of the severity levels of the logs being viewed:
-![..](Images/blah)
+Top 10 referrer domains to VSI's website:
+![..](Images/top-10-referrer-domains-logs.png)
 
-Comparison of the success and failure of Windows activity presented if there was any suspicious activity based on the number of failed activities on the server: 
-![..](Images/blah)
+Count of each HTTP Response Codes: 
+![..](Images/HTTP-Response-Codes-log.png)
 
 ### Alerts
 
-Hourly count of failed Windows activity was created as an alert to notify of any suspicious increase if the amount passed the chosen threshold: 
-![..](Images/blah)
+Hourly count of international activity was created as an alert to notify of any suspicious increase if the amount passed the chosen threshold: 
+![..](Images/IP-activity-outside-the-US.png)
 
-Hourly count of the signature "an account was successfully logged on" was created as an alert to notify of any suspicious increase if the amount passed the chosen threshold:
-![..](Images/blah)
+Hourly count of the HTTP POST Request Method was created as an alert to notify of any suspicious increase if the amount passed the chosen threshold:
+![..](Images/HTTP-POST-alert.png)
 
-Hourly count of the signature "a user account was deleted" was created as an alert to notify of any suspicious increase if the amount passed the chosen threshold: 
-![..](Images/blah)
 
 ### Dashboard
 
-Once these reports and alerts were created, a dashboard was created for easier viewing. 
+After successfully creating the reports and alerts, we created a dashboard to view fields that were significant to know. 
 
-![..](Images/blah)
+![..](Images/apache_dashboard.png)
 
 ## Reviewing Attack Activity Logs
+
 
 
 
