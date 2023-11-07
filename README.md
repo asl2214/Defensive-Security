@@ -21,14 +21,19 @@ Comparison of the success and failure of Windows activity presented if there was
 Hourly count of failed Windows activity was created as an alert to notify of any suspicious increase if the amount passed the chosen threshold: 
 ![..](Images/failed_windows_activity_baseline.png)
 ![..](Images/failed-windows-activity.png)
+We chose 15 counts as our threshold based on our baseline which we based off of the highest number of events that could possibly happen within the hour. 
+
+$%$
 
 Hourly count of the signature "an account was successfully logged on" was created as an alert to notify of any suspicious increase if the amount passed the chosen threshold:
 ![..](Images/successful_login_baseline.png)
 ![..](Images/successful-login-alert.png)
+Similar to the process of our previous alert, we chose 22 counts as our threshold because normal activity indicates the highest activity as 21 counts within an hour. 
 
 Hourly count of the signature "a user account was deleted" was created as an alert to notify of any suspicious increase if the amount passed the chosen threshold: 
 ![..](Images/users_deleted_baseline.png)
 ![..](Images/users-deleted.png)
+Finally, we chose 25 counts as our threshold based on the highest count being 22 events in one hour. 
 
 ### Dashboard
 
@@ -53,11 +58,14 @@ Count of each HTTP Response Codes:
 ### Alerts
 
 Hourly count of international activity was created as an alert to notify of any suspicious increase if the amount passed the chosen threshold: 
+![..](Images/international_activity_baseline.png)
 ![..](Images/IP-activity-outside-the-US.png)
+From the normal activity count per hour, the highest number count we found was 120 events and so we chose 125 counts as our threshold. 
 
 Hourly count of the HTTP POST Request Method was created as an alert to notify of any suspicious increase if the amount passed the chosen threshold:
+![..](Images/HTTP_Post_baseline.png)
 ![..](Images/HTTP-POST-alert.png)
-
+The highest number of events that we found in our baseline 
 
 ### Dashboard
 
@@ -67,8 +75,40 @@ After successfully creating the reports and alerts, we created a dashboard to vi
 
 ## Reviewing Attack Activity Logs
 
+Next, we were provided logs from cyber attacks that VSI experienced due to (the most likely suspect) JobeCorp. The solutions that we got from normal activity logs were put to the test to check if they worked. 
+
+## Windows Server Attack Logs
+
+When we compared the reports, we found a striking difference in numbers compared to baseline logs in our reports. Most of our alerts were set off as well with the exception of the "users deleted" alert. 
+
+### Reports
+
+Severity Levels:
++ baseline
+![..](Images/severity-levels-table.png)
++ attack
+![..](Images/windows-severity-attack.png)
+The attack log indicates a major difference in statistical numbers compared to normal activity in terms of severity level. There was a jump from 329 events to 1111 events in High severity and a slight decrease in informational severity from 4435 counts to 4283 counts. 
+
+$~$
+
+Success and failure login status:
++ baseline
+![..](Images/percentage-of-status-success-and-failure.png)
++ attack
+![..](Images/windows-status-attack.png)
+
+### Alerts
+
+## Apache Attack Logs
+
+Similar to the results in our Windows Server Attack Logs, the Apache Attack Logs also found a significant difference in numbers across the board. 
+
+### Reports
 
 
+
+### Alerts
 
 ## Conclusion
 
