@@ -8,24 +8,24 @@ We first analyzed Windows Server Logs of normal activity. The fields we looked a
 ### Reports
 
 Table of signatures and associated signature IDs was created from the the signature_id field for identification: 
-![..](Images/blah)
+![..](Images/signature_id-and-signature-table.png)
 
 Severity levels and the percentages of each level report allowed for quick understanding of the severity levels of the logs being viewed:
-![..](Images/blah)
+![..](Images/severity-levels-table.png)
 
 Comparison of the success and failure of Windows activity presented if there was any suspicious activity based on the number of failed activities on the server: 
-![..](Images/blah)
+![..](Images/percentage-of-status-success-and-failure.png)
 
 ### Alerts
 
 Hourly count of failed Windows activity was created as an alert to notify of any suspicious increase if the amount passed the chosen threshold: 
-![..](Images/blah)
+![..](Images/failed-windows-activity.png)
 
 Hourly count of the signature "an account was successfully logged on" was created as an alert to notify of any suspicious increase if the amount passed the chosen threshold:
-![..](Images/blah)
+![..](Images/successful-login-alert.png)
 
 Hourly count of the signature "a user account was deleted" was created as an alert to notify of any suspicious increase if the amount passed the chosen threshold: 
-![..](Images/blah)
+![..](Images/users-deleted.png)
 
 ### Dashboard
 
